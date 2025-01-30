@@ -17,8 +17,8 @@ const props = defineProps({
 })
 
 const tabClasses = computed(()=>({
-    "window__tab window__tab--active":props.activeId === props.id,
-    "window__tab":props.activeId !== props.id
+    "tab !bg-bluora":props.activeId === props.id,
+    "tab":props.activeId !== props.id
 }))
 
 </script>

@@ -1,5 +1,8 @@
 @import '/src/assets/styles/_fonts.css';
 @import '/src/assets/styles/_vars.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
 *,
@@ -8,6 +11,9 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+html, body{
+  height: 100%;
 }
 a {
   text-decoration: none;
@@ -28,4 +34,11 @@ button{
 }
 ul{
     list-style: none;
+}
+
+.tab{
+  @apply bg-primary p-[20px] border border-white first:rounded-tl-[25px] last:rounded-tr-[25px] last:rounded-br-[25px] cursor-pointer transition-all ease-in-out duration-200;
+}
+.btn{
+  @apply border-[3px] border-bluora bg-primary p-[15px] rounded-[20px] cursor-pointer mt-[10px] mb-[20px] transition-all ease-in-out duration-200 hover:border-primary hover:bg-bluora active:translate-y-[5px];
 }
